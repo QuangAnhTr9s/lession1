@@ -18,8 +18,8 @@ void bai1() {
   flutter3.add("A"); //thêm học sinh A
   flutter3[0] = "QA"; //sửa Trịnh Quang Anh thành QA
   flutter3.remove("Test"); //xóa Test
-
-  print("flutter 03 sau khi thêm, sửa, xóa: $flutter3");
+  flutter3.insert(0, "1");
+  print("flutter 03 sau khi thêm, sửa, xóa, chèn: $flutter3");
 
   List<int> ageOfMembers = [23, 21, 27, 22, 27, 44];
   print("ageOfMembers: $ageOfMembers");
@@ -29,11 +29,14 @@ void bai1() {
   print("ageOfMembersString: $ageOfMembersString");
 }
 void bai2() {
-  const myInfo = {
+   var myInfo = {
     'name': 'Trinh Quang Anh',
-    'age' : '23',
+    'age' : 23,
     'gender' : 'Male',
     'interests': 'Music, Football, Technology',
   };
   print("My info: $myInfo");
+  myInfo['name'] = 'QA';
+  myInfo['age'] = 20;
+  print('My Info: $myInfo');
 }
